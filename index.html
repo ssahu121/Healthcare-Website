@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Healthcare App</span>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <a href="login.html"><button class="login">Login</button></a>
+            <button class="signup" onclick="window.location.href='Signup.html'">Sign Up</button>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section class="hero">
+
+        <div class="hero-content" id="home">
+            <p class="tagline">TOTAL HEALTH CARE SOLUTION</p>
+            <h1>Your Most Trusted <br> Health Partner</h1>
+            <p class="desc">
+                Your health is our priority. We provide trusted medical services, online consultation, appointment
+                booking, and 24/7 support for patients.
+
+            </p>
+
+            <a href="Signup.html"> <button class="btn">Patient / Volunteer ➜</button></a>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about-hero" id="about">
+        <div class="overlay">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-container">
+
+            <!-- Left Heading -->
+            <div class="about-left">
+                <h2>Personal care <br> for your healthy <br> living</h2>
+            </div>
+
+            <!-- Right Text -->
+            <div class="about-right">
+                <p>
+                    At our Healthcare platform, we are committed to delivering high-quality medical support and
+                    assistance to patients and communities. Our goal is to make healthcare services simple,
+                    accessible, and reliable for everyone.
+
+                    We connect patients with experienced healthcare professionals and dedicated volunteers who are
+                    always ready to help. Whether it’s basic medical guidance, emergency assistance, or daily health
+                    support, we aim to provide timely and effective solutions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Services -->
+    <section class="services" id="service">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <img src="service-1.jpg" alt="Child Care">
+                <h3>Child Care</h3>
+                <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service-2.jpg" alt="Personal Care">
+                <h3>Personal Care</h3>
+                <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service-3.jpg" alt="CT Scan">
+                <h3>CT Scan</h3>
+                <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service-4.jpg" alt="Joint Replacement">
+                <h3>Joint Replacement</h3>
+                <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service-8.jpg" alt="Examination">
+                <h3>Examination & Diagnosis</h3>
+                <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service-6.jpg" alt="Alzheimer">
+                <h3>Alzheimer's Disease</h3>
+                <p>Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <!-- CONTACT US SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+
+            <h2>Contact Us</h2>
+            <p>We are here to help you. Feel free to reach out anytime.</p>
+
+            <div class="contact-box">
+
+                <!-- Left Info -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+
+                    <div class="info-item">
+                        <span>📍</span>
+                        <p>Delhi, India</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span>📞</span>
+                        <p>+91 83638 83928</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span>📧</span>
+                        <p>ab@gmail.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span>⏰</span>
+                        <p>24/7 Support Available</p>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="chat-container">
+        <div id="chat-icon" onclick="toggleChat()">
+            💬
+        </div>
+
+        <div id="chat-window" class="hidden">
+            <div class="chat-header">
+                <span>Seva-Health Bot</span>
+                <button onclick="toggleChat()">✖</button>
+            </div>
+            <div id="chat-body" class="chat-body">
+                <p class="bot-msg">Namaste! Main aapki kya madad kar sakta hoon?</p>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userQuery" placeholder="Puchiye..." onkeypress="handleEnter(event)">
+                <button onclick="sendMsg()">Send</button>
+            </div>
+        </div>
+    </div>
+    <section class="faq-section">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">💊 Kya ye services bilkul free hain?</button>
+            <div class="faq-answer">
+                <p>Haan, Seva-Health NGO ki sabhi basic medical support aur volunteer services bilkul muft (free)
+                    hain.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">👨‍⚕️ Kya main online doctor se baat kar sakta
+                hoon?</button>
+            <div class="faq-answer">
+                <p>Aap apna form submit karein, humare volunteers aapki report dekh kar aapko specialist doctor se
+                    connect karwayenge.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">🚑 Emergency mein kya karein?</button>
+            <div class="faq-answer">
+                <p>Emergency ki sthiti mein turant 'High Priority' form bharein ya apne nazdeeki hospital jayein.
+                    Humara bot bhi critical keywords detect karke alert bhejta hai.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">🤝 Main volunteer kaise ban sakta hoon?</button>
+            <div class="faq-answer">
+                <p>Agar aap ek medical student ya professional hain, toh 'Volunteer' option select karke register
+                    karein. Humari team aapse jald sampark karegi.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <h2>Healthcare</h2>
+                    <p>
+                        Tempora dolorem voluptatum nam vero assumenda voluptate,
+                        facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/">f</a>
+                        <a href="https://twitter.com/">TW</a>
+                        <a href="https://www.linkedin.com/">in</a>
+                        <a href="https://www.instagram.com/">IG</a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3>Department</h3>
+                    <ul>
+                        <li>Surgery</li>
+                        <li>Women's Health</li>
+                        <li>Radiology</li>
+                        <li>Cardioc</li>
+                        <li>Medicine</li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3>Get In Touch</h3>
+                    <p>Support Available for 24/7</p>
+                    <h4>Support@email.com</h4>
+                    <p>Mon to Fri : 08:30 - 18:00</p>
+                    <h4>+23-456-6588</h4>
+                </div>
+
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <p>© Copyright Reserved to Healthcare Website</p>
+
+                <div class="subscribe">
+                    <input type="email" placeholder="Your Email address">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <script>
+        document.querySelector(".contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // page reload stop
+
+            // popup show
+            alert("✅ Message Sent!\n🙏 Thank You for contacting us");
+
+            // form reset
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
